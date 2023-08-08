@@ -1,0 +1,33 @@
+.div_container {
+width: 800px;
+margin: 0 auto;
+}
+
+.main_title {
+    text-align: center;
+}
+.mini_continer {
+    width: 636px;
+    margin-left: 33px;
+}
+.cancel {
+    text-align: center;
+    height: 30px;
+    width: 300px;
+}
+
+.refresh {
+    text-align: center;
+    height: 30px;
+}
+.div_input {
+   padding-top: 10px;
+}
+
+.update {
+    padding-top: 20px;
+    width: 150px;
+   margin-left: 270px;
+   
+    
+}
