@@ -38,8 +38,3 @@ module.exports.checkChecked = (req, res, next) => {
   }
   next();
 };
-// module.exports.limiter = rateLimit({
-//   windowMs: 15 * 60 * 1000,
-//   max: 5,
-//   message: "to many api requsets",
-// });
