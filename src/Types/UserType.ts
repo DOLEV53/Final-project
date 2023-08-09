@@ -100,16 +100,8 @@ import { isValidEmail, isValidHouseNumber, isValidIsraeliPhoneNumber, isValidPas
             toast.error('Email is required');
             return false;
         }
-        if(!isValidEmail(user.email)) {
-           toast.error('User email must be valid');
-            return false;
-        }
         if (!user.password) {
             toast.error('Password is required');
-            return false;
-        }
-        if(!isValidPassword(user.password)) {
-            toast.error('Password must be at least 8 characters,including an uppercase letter,a number,and one of the following special characters:!,@,#,$,or &');
             return false;
         }
        return true
