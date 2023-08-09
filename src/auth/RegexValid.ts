@@ -22,3 +22,15 @@ export const isValidImageUrl = (userImageUrl: string): boolean => {
     const ValidImageUrl = /\bhttps?:\/\/\S+?\.(?:jpe?g|png|gif)\b/;
     return ValidImageUrl.test(userImageUrl);
 };
+
+// houseNumber regex validatin
+export const isValidHouseNumber = (userHouseNumber: string): boolean => {
+    const ValidHuseNumberUrl = /^\d+$/;
+    return ValidHuseNumberUrl.test(userHouseNumber);
+};
+
+// zip regex validatin
+export const isValidZip = (userZip: string): boolean => {
+    const ValidZip = /^\d+$/;
+    return ValidZip.test(userZip);
+};

@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import { isValidEmail, isValidIsraeliPhoneNumber, isValidPassword } from "../auth/RegexValid";
+import { isValidEmail, isValidHouseNumber, isValidIsraeliPhoneNumber, isValidPassword, isValidZip } from "../auth/RegexValid";
 
 
 
@@ -80,8 +80,16 @@ import { isValidEmail, isValidIsraeliPhoneNumber, isValidPassword } from "../aut
             toast.error('House number is required');
             return false;
         }
+        if (!isValidHouseNumber(user.houseNumber)) {
+            toast.error('User houseNumber must be a number ');
+            return false;
+        }
         if (!user.zip) {
             toast.error('Zip number is required');
+            return false;
+        }
+        if (!isValidZip(user.zip)) {
+            toast.error('User zip must be a number ');
             return false;
         }
         return true;
